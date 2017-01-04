@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong, nonnull) NSMutableArray<UIImageView *> *theViewMutableArray;
 @property (nonatomic, strong, nonnull) NSArray<NSNumber *> *theWidthArray;
+@property (nonatomic, assign) NSInteger theSelectedIndex;
 
 @end
 
@@ -78,7 +79,8 @@ NSInteger const keyNumberOfCellViews = 5;
     self.theViewMutableArray = [NSMutableArray new];
     self.theWidthArray = [NSArray arrayWithObjects:[NSNumber numberWithDouble:2], [NSNumber numberWithDouble:4], [NSNumber numberWithDouble:6],
                           [NSNumber numberWithDouble:9], [NSNumber numberWithDouble:15], nil];
-    self.theWidth = self.theWidthArray[0].doubleValue;
+    self.theSelectedIndex = 0;
+    self.theBrushWidth = self.theWidthArray[self.theSelectedIndex].doubleValue;
     for (int i = 0; i < keyNumberOfCellViews; i++)
     {
         UIImageView *theCellView = [UIImageView new];
@@ -98,6 +100,9 @@ NSInteger const keyNumberOfCellViews = 5;
     UIImageView *theImageView = (UIImageView *)[(UIGestureRecognizer *)theTapGestureRecognizer view];
     BZAssert(theImageView);
     NSInteger theIndex = [self.theViewMutableArray indexOfObject:theImageView];
+    self.theSelectedIndex = theIndex;
+    [self methodAdjustCellViews];
+    self.theBrushWidth = self.theWidthArray[theIndex].doubleValue;
     BZAssert((BOOL)(theIndex != NSNotFound));
     if ([self.theDelegate respondsToSelector:@selector(widthMenuViewDidSelectWidth:)])
     {
@@ -121,7 +126,14 @@ NSInteger const keyNumberOfCellViews = 5;
         theCellImageView.theWidth = self.theWidth;
         theCellImageView.theHeight = (self.thePotentialHeight - self.theBottomHeight) / keyNumberOfCellViews;
         theCellImageView.theMinY = theCellImageView.theHeight * i;
-        theCellImageView.image = [UIImage getImageFromColor:[UIColor yellowColor]];
+        if (i == self.theSelectedIndex)
+        {
+            theCellImageView.image = [UIImage getImageFromColor:[UIColor greenColor]];
+        }
+        else
+        {
+            theCellImageView.image = [UIImage getImageFromColor:[UIColor yellowColor]];
+        }
         theCellImageView.userInteractionEnabled = YES;
         
         UIGraphicsBeginImageContextWithOptions(theCellImageView.frame.size, YES, 0.0);
@@ -133,7 +145,7 @@ NSInteger const keyNumberOfCellViews = 5;
         CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0, 0, 0, 1.0);
         CGContextSetBlendMode(UIGraphicsGetCurrentContext(), kCGBlendModeNormal);
         CGContextStrokePath(UIGraphicsGetCurrentContext());
-
+        
         UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
         theCellImageView.image = theImage;
         UIGraphicsEndImageContext();

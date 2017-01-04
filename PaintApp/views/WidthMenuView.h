@@ -14,8 +14,10 @@
 
 @property (nonatomic, assign) double thePotentialHeight;
 @property (nonatomic, assign) double theBottomHeight;
-@property (nonatomic, assign) double theWidth;
+@property (nonatomic, assign) double theBrushWidth;
 @property (nonatomic, weak, nullable) id<WidthMenuViewDelegate> theDelegate;
+
+- (void)methodAdjustCellViews;
 
 @end
 

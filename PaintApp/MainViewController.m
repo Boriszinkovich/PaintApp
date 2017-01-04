@@ -378,6 +378,8 @@ NSInteger const keyRGBMaxValue = 255;
     theButton.selected  = !theButton.isSelected;
     if (theButton.selected)
     {
+        self.theWidthMenuView.theWidth = keyButtonsWidth.theDeviceValue;
+        [self.theWidthMenuView methodAdjustCellViews];
         BZAnimation *theBZAnimation = [BZAnimation new];
         [theBZAnimation methodSetAnimationBlock:^
          {
@@ -411,7 +413,7 @@ NSInteger const keyRGBMaxValue = 255;
     {
         theImage = info[UIImagePickerControllerOriginalImage];
     }
-     self.theMainCanvasView.theBackgroundImage = theImage;
+    self.theMainCanvasView.theBackgroundImage = theImage;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -436,7 +438,7 @@ NSInteger const keyRGBMaxValue = 255;
 
 - (void)widthMenuViewDidSelectWidth:(WidthMenuView * _Nonnull)theWidthMenuView
 {
-    self.theMainCanvasView.theBrushValue = self.theWidthMenuView.theWidth;
+    self.theMainCanvasView.theBrushValue = self.theWidthMenuView.theBrushWidth;
     self.theWidthButton.selected = NO;
     [self methodHideWidthMenu];
 }

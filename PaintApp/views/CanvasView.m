@@ -354,7 +354,6 @@
             UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
             self.theMainDrawingImageView.image = theImage;
             CGContextRelease(theContext);
-            UIGraphicsEndImageContext();
         }
     }
 }
@@ -387,7 +386,6 @@
         UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
         self.theMainDrawingImageView.image = theImage;
         CGContextRelease(theContext);
-        UIGraphicsEndImageContext();
         [self.theRedoLinesArray removeLastObject];
     }
 }
