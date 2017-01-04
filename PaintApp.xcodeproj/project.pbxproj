@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E15AA3B1CBB9732006C54C6 /* clear_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E15AA381CBB9732006C54C6 /* clear_icon.png */; };
+		3E774B8B1CBB991E00557251 /* redo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E774B891CBB991E00557251 /* redo_icon.png */; };
+		3E774B8C1CBB991E00557251 /* undo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E774B8A1CBB991E00557251 /* undo_icon.png */; };
+		3E9EE0741CBD1920002891AF /* WidthMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9EE0731CBD1920002891AF /* WidthMenuView.m */; };
+		3EF36E0D1CB7FB690095C0E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E0C1CB7FB690095C0E0 /* main.m */; };
+		3EF36E101CB7FB690095C0E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E0F1CB7FB690095C0E0 /* AppDelegate.m */; };
+		3EF36E181CB7FB690095C0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EF36E171CB7FB690095C0E0 /* Assets.xcassets */; };
+		3EF36E261CB7FB690095C0E0 /* PaintAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E251CB7FB690095C0E0 /* PaintAppTests.m */; };
+		3EF36E311CB7FB690095C0E0 /* PaintAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E301CB7FB690095C0E0 /* PaintAppUITests.m */; };
+		3EF36E401CB7FC170095C0E0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E3F1CB7FC170095C0E0 /* MainViewController.m */; };
+		3EF36E671CB7FC3A0095C0E0 /* BZAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E431CB7FC3A0095C0E0 /* BZAnimation.m */; };
+		3EF36E681CB7FC3A0095C0E0 /* BZDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E451CB7FC3A0095C0E0 /* BZDeviceHardware.m */; };
+		3EF36E691CB7FC3A0095C0E0 /* BZExtensionsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E471CB7FC3A0095C0E0 /* BZExtensionsManager.m */; };
+		3EF36E6A1CB7FC3A0095C0E0 /* BZPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E491CB7FC3A0095C0E0 /* BZPageView.m */; };
+		3EF36E6B1CB7FC3A0095C0E0 /* BZSyncBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E4C1CB7FC3A0095C0E0 /* BZSyncBackground.m */; };
+		3EF36E6C1CB7FC3A0095C0E0 /* BZURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E4E1CB7FC3A0095C0E0 /* BZURLSession.m */; };
+		3EF36E6D1CB7FC3A0095C0E0 /* NSArray+BZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E501CB7FC3A0095C0E0 /* NSArray+BZExtensions.m */; };
+		3EF36E6E1CB7FC3A0095C0E0 /* NSDictionary+BZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E521CB7FC3A0095C0E0 /* NSDictionary+BZExtensions.m */; };
+		3EF36E6F1CB7FC3A0095C0E0 /* NSManagedObject+BZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E541CB7FC3A0095C0E0 /* NSManagedObject+BZExtensions.m */; };
+		3EF36E701CB7FC3A0095C0E0 /* NSObject+BZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E561CB7FC3A0095C0E0 /* NSObject+BZExtensions.m */; };
+		3EF36E711CB7FC3A0095C0E0 /* NSString+BZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E581CB7FC3A0095C0E0 /* NSString+BZExtensions.m */; };
+		3EF36E721CB7FC3A0095C0E0 /* ODTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E5A1CB7FC3A0095C0E0 /* ODTableView.m */; };
+		3EF36E731CB7FC3A0095C0E0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E5C1CB7FC3A0095C0E0 /* Reachability.m */; };
+		3EF36E741CB7FC3A0095C0E0 /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E5E1CB7FC3A0095C0E0 /* SMPageControl.m */; };
+		3EF36E751CB7FC3A0095C0E0 /* UIColor+BZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E601CB7FC3A0095C0E0 /* UIColor+BZExtensions.m */; };
+		3EF36E761CB7FC3A0095C0E0 /* UIImage+BZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E621CB7FC3A0095C0E0 /* UIImage+BZExtensions.m */; };
+		3EF36E771CB7FC3A0095C0E0 /* UISlider+BZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E641CB7FC3A0095C0E0 /* UISlider+BZExtensions.m */; };
+		3EF36E781CB7FC3A0095C0E0 /* UIView+BZExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E661CB7FC3A0095C0E0 /* UIView+BZExtensions.m */; };
+		3EF36E7A1CB7FD270095C0E0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EF36E791CB7FD270095C0E0 /* Default-568h@2x.png */; };
+		3EF36E7E1CB7FEEF0095C0E0 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E7D1CB7FEEF0095C0E0 /* CanvasView.m */; };
+		3EF36E821CB80E2E0095C0E0 /* CanvasLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36E811CB80E2E0095C0E0 /* CanvasLine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EF36E221CB7FB690095C0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EF36E001CB7FB690095C0E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EF36E071CB7FB690095C0E0;
+			remoteInfo = PaintApp;
+		};
+		3EF36E2D1CB7FB690095C0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EF36E001CB7FB690095C0E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EF36E071CB7FB690095C0E0;
+			remoteInfo = PaintApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E15AA381CBB9732006C54C6 /* clear_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear_icon.png; sourceTree = "<group>"; };
+		3E774B891CBB991E00557251 /* redo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redo_icon.png; sourceTree = "<group>"; };
+		3E774B8A1CBB991E00557251 /* undo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undo_icon.png; sourceTree = "<group>"; };
+		3E9EE0721CBD1920002891AF /* WidthMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidthMenuView.h; sourceTree = "<group>"; };
+		3E9EE0731CBD1920002891AF /* WidthMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidthMenuView.m; sourceTree = "<group>"; };
+		3EF36E081CB7FB690095C0E0 /* PaintApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF36E0C1CB7FB690095C0E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3EF36E0E1CB7FB690095C0E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3EF36E0F1CB7FB690095C0E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3EF36E171CB7FB690095C0E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EF36E1C1CB7FB690095C0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF36E211CB7FB690095C0E0 /* PaintAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF36E251CB7FB690095C0E0 /* PaintAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintAppTests.m; sourceTree = "<group>"; };
+		3EF36E271CB7FB690095C0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF36E2C1CB7FB690095C0E0 /* PaintAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaintAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF36E301CB7FB690095C0E0 /* PaintAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintAppUITests.m; sourceTree = "<group>"; };
+		3EF36E321CB7FB690095C0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EF36E3E1CB7FC170095C0E0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3EF36E3F1CB7FC170095C0E0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3EF36E421CB7FC3A0095C0E0 /* BZAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZAnimation.h; sourceTree = "<group>"; };
+		3EF36E431CB7FC3A0095C0E0 /* BZAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZAnimation.m; sourceTree = "<group>"; };
+		3EF36E441CB7FC3A0095C0E0 /* BZDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZDeviceHardware.h; sourceTree = "<group>"; };
+		3EF36E451CB7FC3A0095C0E0 /* BZDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZDeviceHardware.m; sourceTree = "<group>"; };
+		3EF36E461CB7FC3A0095C0E0 /* BZExtensionsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZExtensionsManager.h; sourceTree = "<group>"; };
+		3EF36E471CB7FC3A0095C0E0 /* BZExtensionsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZExtensionsManager.m; sourceTree = "<group>"; };
+		3EF36E481CB7FC3A0095C0E0 /* BZPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZPageView.h; sourceTree = "<group>"; };
+		3EF36E491CB7FC3A0095C0E0 /* BZPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZPageView.m; sourceTree = "<group>"; };
+		3EF36E4A1CB7FC3A0095C0E0 /* BZScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZScope.h; sourceTree = "<group>"; };
+		3EF36E4B1CB7FC3A0095C0E0 /* BZSyncBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZSyncBackground.h; sourceTree = "<group>"; };
+		3EF36E4C1CB7FC3A0095C0E0 /* BZSyncBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZSyncBackground.m; sourceTree = "<group>"; };
+		3EF36E4D1CB7FC3A0095C0E0 /* BZURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZURLSession.h; sourceTree = "<group>"; };
+		3EF36E4E1CB7FC3A0095C0E0 /* BZURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZURLSession.m; sourceTree = "<group>"; };
+		3EF36E4F1CB7FC3A0095C0E0 /* NSArray+BZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BZExtensions.h"; sourceTree = "<group>"; };
+		3EF36E501CB7FC3A0095C0E0 /* NSArray+BZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BZExtensions.m"; sourceTree = "<group>"; };
+		3EF36E511CB7FC3A0095C0E0 /* NSDictionary+BZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BZExtensions.h"; sourceTree = "<group>"; };
+		3EF36E521CB7FC3A0095C0E0 /* NSDictionary+BZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BZExtensions.m"; sourceTree = "<group>"; };
+		3EF36E531CB7FC3A0095C0E0 /* NSManagedObject+BZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+BZExtensions.h"; sourceTree = "<group>"; };
+		3EF36E541CB7FC3A0095C0E0 /* NSManagedObject+BZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+BZExtensions.m"; sourceTree = "<group>"; };
+		3EF36E551CB7FC3A0095C0E0 /* NSObject+BZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BZExtensions.h"; sourceTree = "<group>"; };
+		3EF36E561CB7FC3A0095C0E0 /* NSObject+BZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BZExtensions.m"; sourceTree = "<group>"; };
+		3EF36E571CB7FC3A0095C0E0 /* NSString+BZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BZExtensions.h"; sourceTree = "<group>"; };
+		3EF36E581CB7FC3A0095C0E0 /* NSString+BZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BZExtensions.m"; sourceTree = "<group>"; };
+		3EF36E591CB7FC3A0095C0E0 /* ODTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODTableView.h; sourceTree = "<group>"; };
+		3EF36E5A1CB7FC3A0095C0E0 /* ODTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODTableView.m; sourceTree = "<group>"; };
+		3EF36E5B1CB7FC3A0095C0E0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3EF36E5C1CB7FC3A0095C0E0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3EF36E5D1CB7FC3A0095C0E0 /* SMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageControl.h; sourceTree = "<group>"; };
+		3EF36E5E1CB7FC3A0095C0E0 /* SMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPageControl.m; sourceTree = "<group>"; };
+		3EF36E5F1CB7FC3A0095C0E0 /* UIColor+BZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BZExtensions.h"; sourceTree = "<group>"; };
+		3EF36E601CB7FC3A0095C0E0 /* UIColor+BZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BZExtensions.m"; sourceTree = "<group>"; };
+		3EF36E611CB7FC3A0095C0E0 /* UIImage+BZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BZExtensions.h"; sourceTree = "<group>"; };
+		3EF36E621CB7FC3A0095C0E0 /* UIImage+BZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BZExtensions.m"; sourceTree = "<group>"; };
+		3EF36E631CB7FC3A0095C0E0 /* UISlider+BZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+BZExtensions.h"; sourceTree = "<group>"; };
+		3EF36E641CB7FC3A0095C0E0 /* UISlider+BZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+BZExtensions.m"; sourceTree = "<group>"; };
+		3EF36E651CB7FC3A0095C0E0 /* UIView+BZExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BZExtensions.h"; sourceTree = "<group>"; };
+		3EF36E661CB7FC3A0095C0E0 /* UIView+BZExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BZExtensions.m"; sourceTree = "<group>"; };
+		3EF36E791CB7FD270095C0E0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3EF36E7C1CB7FEEF0095C0E0 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		3EF36E7D1CB7FEEF0095C0E0 /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		3EF36E801CB80E2E0095C0E0 /* CanvasLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasLine.h; sourceTree = "<group>"; };
+		3EF36E811CB80E2E0095C0E0 /* CanvasLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasLine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EF36E051CB7FB690095C0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF36E1E1CB7FB690095C0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF36E291CB7FB690095C0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E15AA2D1CBB8C4D006C54C6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3E774B891CBB991E00557251 /* redo_icon.png */,
+				3E774B8A1CBB991E00557251 /* undo_icon.png */,
+				3E15AA381CBB9732006C54C6 /* clear_icon.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		3EF36DFF1CB7FB690095C0E0 = {
+			isa = PBXGroup;
+			children = (
+				3EF36E791CB7FD270095C0E0 /* Default-568h@2x.png */,
+				3EF36E0A1CB7FB690095C0E0 /* PaintApp */,
+				3EF36E241CB7FB690095C0E0 /* PaintAppTests */,
+				3EF36E2F1CB7FB690095C0E0 /* PaintAppUITests */,
+				3EF36E091CB7FB690095C0E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EF36E091CB7FB690095C0E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EF36E081CB7FB690095C0E0 /* PaintApp.app */,
+				3EF36E211CB7FB690095C0E0 /* PaintAppTests.xctest */,
+				3EF36E2C1CB7FB690095C0E0 /* PaintAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EF36E0A1CB7FB690095C0E0 /* PaintApp */ = {
+			isa = PBXGroup;
+			children = (
+				3EF36E0E1CB7FB690095C0E0 /* AppDelegate.h */,
+				3EF36E0F1CB7FB690095C0E0 /* AppDelegate.m */,
+				3EF36E3E1CB7FC170095C0E0 /* MainViewController.h */,
+				3EF36E3F1CB7FC170095C0E0 /* MainViewController.m */,
+				3E15AA2D1CBB8C4D006C54C6 /* images */,
+				3EF36E411CB7FC3A0095C0E0 /* BZExtensions */,
+				3EF36E7F1CB80D950095C0E0 /* models */,
+				3EF36E7B1CB7FED80095C0E0 /* views */,
+				3EF36E171CB7FB690095C0E0 /* Assets.xcassets */,
+				3EF36E1C1CB7FB690095C0E0 /* Info.plist */,
+				3EF36E0B1CB7FB690095C0E0 /* Supporting Files */,
+			);
+			path = PaintApp;
+			sourceTree = "<group>";
+		};
+		3EF36E0B1CB7FB690095C0E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EF36E0C1CB7FB690095C0E0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EF36E241CB7FB690095C0E0 /* PaintAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EF36E251CB7FB690095C0E0 /* PaintAppTests.m */,
+				3EF36E271CB7FB690095C0E0 /* Info.plist */,
+			);
+			path = PaintAppTests;
+			sourceTree = "<group>";
+		};
+		3EF36E2F1CB7FB690095C0E0 /* PaintAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3EF36E301CB7FB690095C0E0 /* PaintAppUITests.m */,
+				3EF36E321CB7FB690095C0E0 /* Info.plist */,
+			);
+			path = PaintAppUITests;
+			sourceTree = "<group>";
+		};
+		3EF36E411CB7FC3A0095C0E0 /* BZExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				3EF36E421CB7FC3A0095C0E0 /* BZAnimation.h */,
+				3EF36E431CB7FC3A0095C0E0 /* BZAnimation.m */,
+				3EF36E441CB7FC3A0095C0E0 /* BZDeviceHardware.h */,
+				3EF36E451CB7FC3A0095C0E0 /* BZDeviceHardware.m */,
+				3EF36E461CB7FC3A0095C0E0 /* BZExtensionsManager.h */,
+				3EF36E471CB7FC3A0095C0E0 /* BZExtensionsManager.m */,
+				3EF36E481CB7FC3A0095C0E0 /* BZPageView.h */,
+				3EF36E491CB7FC3A0095C0E0 /* BZPageView.m */,
+				3EF36E4A1CB7FC3A0095C0E0 /* BZScope.h */,
+				3EF36E4B1CB7FC3A0095C0E0 /* BZSyncBackground.h */,
+				3EF36E4C1CB7FC3A0095C0E0 /* BZSyncBackground.m */,
+				3EF36E4D1CB7FC3A0095C0E0 /* BZURLSession.h */,
+				3EF36E4E1CB7FC3A0095C0E0 /* BZURLSession.m */,
+				3EF36E4F1CB7FC3A0095C0E0 /* NSArray+BZExtensions.h */,
+				3EF36E501CB7FC3A0095C0E0 /* NSArray+BZExtensions.m */,
+				3EF36E511CB7FC3A0095C0E0 /* NSDictionary+BZExtensions.h */,
+				3EF36E521CB7FC3A0095C0E0 /* NSDictionary+BZExtensions.m */,
+				3EF36E531CB7FC3A0095C0E0 /* NSManagedObject+BZExtensions.h */,
+				3EF36E541CB7FC3A0095C0E0 /* NSManagedObject+BZExtensions.m */,
+				3EF36E551CB7FC3A0095C0E0 /* NSObject+BZExtensions.h */,
+				3EF36E561CB7FC3A0095C0E0 /* NSObject+BZExtensions.m */,
+				3EF36E571CB7FC3A0095C0E0 /* NSString+BZExtensions.h */,
+				3EF36E581CB7FC3A0095C0E0 /* NSString+BZExtensions.m */,
+				3EF36E591CB7FC3A0095C0E0 /* ODTableView.h */,
+				3EF36E5A1CB7FC3A0095C0E0 /* ODTableView.m */,
+				3EF36E5B1CB7FC3A0095C0E0 /* Reachability.h */,
+				3EF36E5C1CB7FC3A0095C0E0 /* Reachability.m */,
+				3EF36E5D1CB7FC3A0095C0E0 /* SMPageControl.h */,
+				3EF36E5E1CB7FC3A0095C0E0 /* SMPageControl.m */,
+				3EF36E5F1CB7FC3A0095C0E0 /* UIColor+BZExtensions.h */,
+				3EF36E601CB7FC3A0095C0E0 /* UIColor+BZExtensions.m */,
+				3EF36E611CB7FC3A0095C0E0 /* UIImage+BZExtensions.h */,
+				3EF36E621CB7FC3A0095C0E0 /* UIImage+BZExtensions.m */,
+				3EF36E631CB7FC3A0095C0E0 /* UISlider+BZExtensions.h */,
+				3EF36E641CB7FC3A0095C0E0 /* UISlider+BZExtensions.m */,
+				3EF36E651CB7FC3A0095C0E0 /* UIView+BZExtensions.h */,
+				3EF36E661CB7FC3A0095C0E0 /* UIView+BZExtensions.m */,
+			);
+			path = BZExtensions;
+			sourceTree = "<group>";
+		};
+		3EF36E7B1CB7FED80095C0E0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3EF36E7C1CB7FEEF0095C0E0 /* CanvasView.h */,
+				3EF36E7D1CB7FEEF0095C0E0 /* CanvasView.m */,
+				3E9EE0721CBD1920002891AF /* WidthMenuView.h */,
+				3E9EE0731CBD1920002891AF /* WidthMenuView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		3EF36E7F1CB80D950095C0E0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3EF36E801CB80E2E0095C0E0 /* CanvasLine.h */,
+				3EF36E811CB80E2E0095C0E0 /* CanvasLine.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EF36E071CB7FB690095C0E0 /* PaintApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EF36E351CB7FB690095C0E0 /* Build configuration list for PBXNativeTarget "PaintApp" */;
+			buildPhases = (
+				3EF36E041CB7FB690095C0E0 /* Sources */,
+				3EF36E051CB7FB690095C0E0 /* Frameworks */,
+				3EF36E061CB7FB690095C0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaintApp;
+			productName = PaintApp;
+			productReference = 3EF36E081CB7FB690095C0E0 /* PaintApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EF36E201CB7FB690095C0E0 /* PaintAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EF36E381CB7FB690095C0E0 /* Build configuration list for PBXNativeTarget "PaintAppTests" */;
+			buildPhases = (
+				3EF36E1D1CB7FB690095C0E0 /* Sources */,
+				3EF36E1E1CB7FB690095C0E0 /* Frameworks */,
+				3EF36E1F1CB7FB690095C0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EF36E231CB7FB690095C0E0 /* PBXTargetDependency */,
+			);
+			name = PaintAppTests;
+			productName = PaintAppTests;
+			productReference = 3EF36E211CB7FB690095C0E0 /* PaintAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3EF36E2B1CB7FB690095C0E0 /* PaintAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EF36E3B1CB7FB690095C0E0 /* Build configuration list for PBXNativeTarget "PaintAppUITests" */;
+			buildPhases = (
+				3EF36E281CB7FB690095C0E0 /* Sources */,
+				3EF36E291CB7FB690095C0E0 /* Frameworks */,
+				3EF36E2A1CB7FB690095C0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EF36E2E1CB7FB690095C0E0 /* PBXTargetDependency */,
+			);
+			name = PaintAppUITests;
+			productName = PaintAppUITests;
+			productReference = 3EF36E2C1CB7FB690095C0E0 /* PaintAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EF36E001CB7FB690095C0E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Boris;
+				TargetAttributes = {
+					3EF36E071CB7FB690095C0E0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = MR5E9K3P87;
+					};
+					3EF36E201CB7FB690095C0E0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = MR5E9K3P87;
+						TestTargetID = 3EF36E071CB7FB690095C0E0;
+					};
+					3EF36E2B1CB7FB690095C0E0 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = MR5E9K3P87;
+						TestTargetID = 3EF36E071CB7FB690095C0E0;
+					};
+				};
+			};
+			buildConfigurationList = 3EF36E031CB7FB690095C0E0 /* Build configuration list for PBXProject "PaintApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EF36DFF1CB7FB690095C0E0;
+			productRefGroup = 3EF36E091CB7FB690095C0E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EF36E071CB7FB690095C0E0 /* PaintApp */,
+				3EF36E201CB7FB690095C0E0 /* PaintAppTests */,
+				3EF36E2B1CB7FB690095C0E0 /* PaintAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EF36E061CB7FB690095C0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E15AA3B1CBB9732006C54C6 /* clear_icon.png in Resources */,
+				3EF36E181CB7FB690095C0E0 /* Assets.xcassets in Resources */,
+				3E774B8B1CBB991E00557251 /* redo_icon.png in Resources */,
+				3EF36E7A1CB7FD270095C0E0 /* Default-568h@2x.png in Resources */,
+				3E774B8C1CBB991E00557251 /* undo_icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF36E1F1CB7FB690095C0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF36E2A1CB7FB690095C0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EF36E041CB7FB690095C0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF36E741CB7FC3A0095C0E0 /* SMPageControl.m in Sources */,
+				3EF36E6A1CB7FC3A0095C0E0 /* BZPageView.m in Sources */,
+				3E9EE0741CBD1920002891AF /* WidthMenuView.m in Sources */,
+				3EF36E6E1CB7FC3A0095C0E0 /* NSDictionary+BZExtensions.m in Sources */,
+				3EF36E751CB7FC3A0095C0E0 /* UIColor+BZExtensions.m in Sources */,
+				3EF36E681CB7FC3A0095C0E0 /* BZDeviceHardware.m in Sources */,
+				3EF36E821CB80E2E0095C0E0 /* CanvasLine.m in Sources */,
+				3EF36E711CB7FC3A0095C0E0 /* NSString+BZExtensions.m in Sources */,
+				3EF36E781CB7FC3A0095C0E0 /* UIView+BZExtensions.m in Sources */,
+				3EF36E671CB7FC3A0095C0E0 /* BZAnimation.m in Sources */,
+				3EF36E101CB7FB690095C0E0 /* AppDelegate.m in Sources */,
+				3EF36E401CB7FC170095C0E0 /* MainViewController.m in Sources */,
+				3EF36E6C1CB7FC3A0095C0E0 /* BZURLSession.m in Sources */,
+				3EF36E771CB7FC3A0095C0E0 /* UISlider+BZExtensions.m in Sources */,
+				3EF36E7E1CB7FEEF0095C0E0 /* CanvasView.m in Sources */,
+				3EF36E721CB7FC3A0095C0E0 /* ODTableView.m in Sources */,
+				3EF36E0D1CB7FB690095C0E0 /* main.m in Sources */,
+				3EF36E731CB7FC3A0095C0E0 /* Reachability.m in Sources */,
+				3EF36E6B1CB7FC3A0095C0E0 /* BZSyncBackground.m in Sources */,
+				3EF36E6F1CB7FC3A0095C0E0 /* NSManagedObject+BZExtensions.m in Sources */,
+				3EF36E6D1CB7FC3A0095C0E0 /* NSArray+BZExtensions.m in Sources */,
+				3EF36E701CB7FC3A0095C0E0 /* NSObject+BZExtensions.m in Sources */,
+				3EF36E691CB7FC3A0095C0E0 /* BZExtensionsManager.m in Sources */,
+				3EF36E761CB7FC3A0095C0E0 /* UIImage+BZExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF36E1D1CB7FB690095C0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF36E261CB7FB690095C0E0 /* PaintAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EF36E281CB7FB690095C0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EF36E311CB7FB690095C0E0 /* PaintAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EF36E231CB7FB690095C0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EF36E071CB7FB690095C0E0 /* PaintApp */;
+			targetProxy = 3EF36E221CB7FB690095C0E0 /* PBXContainerItemProxy */;
+		};
+		3EF36E2E1CB7FB690095C0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EF36E071CB7FB690095C0E0 /* PaintApp */;
+			targetProxy = 3EF36E2D1CB7FB690095C0E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3EF36E331CB7FB690095C0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EF36E341CB7FB690095C0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EF36E361CB7FB690095C0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PaintApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BZ.PaintApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3EF36E371CB7FB690095C0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PaintApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BZ.PaintApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3EF36E391CB7FB690095C0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PaintAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BZ.PaintAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaintApp.app/PaintApp";
+			};
+			name = Debug;
+		};
+		3EF36E3A1CB7FB690095C0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PaintAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BZ.PaintAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaintApp.app/PaintApp";
+			};
+			name = Release;
+		};
+		3EF36E3C1CB7FB690095C0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PaintAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BZ.PaintAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PaintApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3EF36E3D1CB7FB690095C0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PaintAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BZ.PaintAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PaintApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EF36E031CB7FB690095C0E0 /* Build configuration list for PBXProject "PaintApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF36E331CB7FB690095C0E0 /* Debug */,
+				3EF36E341CB7FB690095C0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EF36E351CB7FB690095C0E0 /* Build configuration list for PBXNativeTarget "PaintApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF36E361CB7FB690095C0E0 /* Debug */,
+				3EF36E371CB7FB690095C0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EF36E381CB7FB690095C0E0 /* Build configuration list for PBXNativeTarget "PaintAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF36E391CB7FB690095C0E0 /* Debug */,
+				3EF36E3A1CB7FB690095C0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EF36E3B1CB7FB690095C0E0 /* Build configuration list for PBXNativeTarget "PaintAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EF36E3C1CB7FB690095C0E0 /* Debug */,
+				3EF36E3D1CB7FB690095C0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EF36E001CB7FB690095C0E0 /* Project object */;
+}
